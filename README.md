@@ -4,7 +4,7 @@ This app allows the user to click and drag different instrument Icons and have t
 
 # Inspiration & Creative Notes
 Inspiration for this project can be viewed on Milanote (Work in Progress)
-[Milanote](https://app.milanote.com/1Le1rs1ip84Gac?p=JIpKbz9E0U6)
+https://app.milanote.com/1Le1rs1ip84Gac?p=JIpKbz9E0U6
 
 
 # Instructions
