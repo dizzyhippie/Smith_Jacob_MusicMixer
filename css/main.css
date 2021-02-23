@@ -6,3 +6,21 @@
 body{
 	background-color: #011023;
 }
+
+#mainDisplay{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.instrument_row{
+	width: 320px;
+	height: 575px;
+	background-color: #7E7E7E;
+}
+
+#playBoard{
+	width: 650px;
+	height: 575px;
+	background-color: #DBDBDB;
+}
