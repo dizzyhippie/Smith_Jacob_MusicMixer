@@ -14,11 +14,12 @@ https://app.milanote.com/1Le1rs1ip84Gac?p=JIpKbz9E0U6
 
 # Author Details
 ## Jacob Smith
-## ALL GRAPHICS AND SOUND LOOPS CREATED BY JACOB SMITH
+All graphics and sound loops created by Jacob Smith 
+
 # Tools Used
 ## HTML & CSS
 ## Javascript
 ## Adobe Illustrator
-
+## Maschine & Maschine Mikro MK2
 
 
