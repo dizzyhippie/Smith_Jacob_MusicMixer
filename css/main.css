@@ -39,7 +39,7 @@ h2{
 #playBoard{
 	width: 650px;
 	height: 550px;
-	background-color: #F3F0F9;
+	background-image: url(../images/background_playboard.png);
 }
 
 #dropzone_container{
@@ -54,12 +54,12 @@ h2{
 	height: 150px;
 	width: 115px;
 	border: 1px solid #000;
+	background-color: #F3F0F9;
 }
 
 #midi_img{
 	width: 600px;
 	height: 325px;
-	background-color: #fff;
 	display: block;
 	margin: auto;
 	margin-top: 25px;
