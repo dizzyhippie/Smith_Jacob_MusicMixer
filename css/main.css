@@ -8,11 +8,21 @@ body{
 	padding-top: 25px;
 }
 
-h2{
+h1{
 	font-family: arial, 'sans-serif';
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
+}
+
+#footerHeadline{
+	padding-top: 15px;
+	display: block;
+	margin: 0 auto;
+	background-color: #45377D;
+	color: #fff;
+	font-family: arial, 'sans-serif';
+	width: 575px;
 }
 
 #mainDisplay{
@@ -22,6 +32,8 @@ h2{
 }
 
 .instrument_row{
+	padding-top: 15px;
+	padding-bottom: 15px;
 	width: 320px;
 	height: 500px;
 	background-color: #45377D;
@@ -33,7 +45,6 @@ h2{
 	background-color: #F3F0F9;
 	margin: 15px auto 22px auto;
 	display: block
-
 }
 
 #playBoard{
@@ -90,7 +101,7 @@ h2{
 
 #footer_instruments{
 	width: 575px;
-	height: 175px;
+	height: 150px;
 	background-color: #45377D;
 	margin: 0 auto;
 	display: flex;
