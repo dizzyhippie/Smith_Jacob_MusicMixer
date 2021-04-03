@@ -4,7 +4,8 @@
 const instrumentIcons = document.querySelectorAll(".instruments"), 
 	loops = document.querySelectorAll(".loops"), 
 	playBoard = document.querySelectorAll(".dropzones"), 
-	playBoardContainer = document.querySelector("#dropzone_container");
+	playBoardContainer = document.querySelector("#dropzone_container"),
+	footerSounds = document.querySelectorAll(".bot_instruments");
 
 
 //Click & Held onto an icon
@@ -44,6 +45,7 @@ function playSound(event){
 
 //Event Handling at the bottom
 instrumentIcons.forEach(piece => piece.addEventListener("dragstart", picked));
+footerSounds.forEach(piece => piece.addEventListener("dragstart", picked));
 playBoard.forEach(zone => {
 	zone.addEventListener("dragover", draggedOver);
 	zone.addEventListener("drop", chosen);
