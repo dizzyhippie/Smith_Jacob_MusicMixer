@@ -44,7 +44,8 @@ h1{
 	height: 100px;
 	background-color: #F3F0F9;
 	margin: 15px auto 22px auto;
-	display: block
+	display: block;
+	cursor: pointer;
 }
 
 #playBoard{
@@ -62,10 +63,17 @@ h1{
 	margin-right: 15px;}
 
 .dropzones{
-	height: 150px;
-	width: 115px;
+	height: 100px;
+	width: 100px;
 	border: 1px solid #000;
 	background-color: #F3F0F9;
+	position: relative;
+}
+
+.dropzones img{
+	bottom: 0;
+	padding: 0;
+	margin: 0;
 }
 
 #midi_img{
