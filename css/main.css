@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: #584797;
+	background-color: #0a0a0a;
 	padding-top: 25px;
 }
 
@@ -19,7 +19,7 @@ h1{
 	padding-top: 15px;
 	display: block;
 	margin: 0 auto;
-	background-color: #45377D;
+	background-color: #5f6164;
 	color: #fff;
 	font-family: arial, 'sans-serif';
 	width: 575px;
@@ -36,7 +36,7 @@ h1{
 	padding-bottom: 15px;
 	width: 320px;
 	height: 500px;
-	background-color: #45377D;
+	background-color: #5f6164;
 }
 
 .instruments{
@@ -46,6 +46,7 @@ h1{
 	margin: 15px auto 22px auto;
 	display: block;
 	cursor: pointer;
+	border-radius: 15px;
 }
 
 #playBoard{
@@ -94,6 +95,10 @@ h1{
 	margin-bottom: 35px;
 }
 
+#controls img{
+	cursor: pointer;
+}
+
 .placeholder{
 	background-color: #F3F0F9;
 	width: 40px;
@@ -105,12 +110,13 @@ h1{
 	height: 100px;
 	background-color: #F3F0F9;
 	margin: auto;
+	border-radius: 15px;
 }
 
 #footer_instruments{
 	width: 575px;
 	height: 150px;
-	background-color: #45377D;
+	background-color: #5f6164;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
