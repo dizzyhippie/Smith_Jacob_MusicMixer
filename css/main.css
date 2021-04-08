@@ -86,7 +86,7 @@ h1{
 }
 
 #controls{
-	width: 205px;
+	width: 350px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -99,10 +99,9 @@ h1{
 	cursor: pointer;
 }
 
-.placeholder{
-	background-color: #F3F0F9;
-	width: 40px;
-	height: 40px;
+.buttons{
+	width: 60px;
+	height: 60px;
 }
 
 .bot_instruments{
