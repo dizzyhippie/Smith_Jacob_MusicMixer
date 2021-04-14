@@ -5,6 +5,7 @@ const instrumentIcons = document.querySelectorAll(".instruments"),
 	loops = document.querySelectorAll(".loops"), 
 	playBoard = document.querySelectorAll(".dropzones"), 
 	playBoardContainer = document.querySelector("#dropzone_container"),
+	liveGIF = document.querySelector("#midi_img");
 	footerSounds = document.querySelectorAll(".bot_instruments"),
 	playButton = document.querySelector("#play"),
 	pauseButton = document.querySelector("#pause"),
@@ -31,7 +32,6 @@ function chosen(event){
 	event.preventDefault();
 	let targetID = event.dataTransfer.getData("savedID");
 	console.log("I chose this", targetID);
-
 	//Move the icon into the selected "drop" containers
 	event.target.appendChild(document.querySelector(`#${targetID}`));
 }
@@ -44,6 +44,11 @@ function playSound(event){
 	audio.currentTime = 0;
 	audio.play();
 	audio.volume = 0.5;
+}
+
+function imageSwap(event){
+	event.preventDefault();
+	document.getElementById("midi_img").src="images/music_playing.gif";
 }
 
 //Use when a new track is added, or they hit the restart button
@@ -95,7 +100,8 @@ footerSounds.forEach(piece => piece.addEventListener("dragstart", picked));
 playBoard.forEach(zone => {
 	zone.addEventListener("dragover", draggedOver);
 	zone.addEventListener("drop", chosen);
-	zone.addEventListener("drop", restartTrack);	
+	zone.addEventListener("drop", restartTrack);
+	zone.addEventListener("drop", imageSwap);	
 });
 playButton.addEventListener("click", playTrack);
 pauseButton.addEventListener("click", pauseTrack);
