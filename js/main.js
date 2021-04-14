@@ -9,7 +9,8 @@ const instrumentIcons = document.querySelectorAll(".instruments"),
 	playButton = document.querySelector("#play"),
 	pauseButton = document.querySelector("#pause"),
 	resetButton =document.querySelector("#reset"),
-	startOverButton = document.querySelector("#startOver");
+	startOverButton = document.querySelector("#startOver"),
+	track = document.querySelector('audio');
 
 //Click & Held onto an icon
 function picked(){
@@ -56,8 +57,9 @@ function startOver(event){
 }
 
 function pauseTrack(event){
-	event.preventDefault();
+	let song = document.querySelector('.playing')
 	console.log("pausing track");
+	song.pause();
 }
 
 //AUDIO VOLUME THING
