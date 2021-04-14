@@ -8,8 +8,7 @@ body{
 	padding-top: 25px;
 }
 
-h1{
-	font-family: arial, 'sans-serif';
+h2{
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
@@ -56,7 +55,6 @@ h1{
 .instruments{
 	width: 100px;
 	height: 100px;
-	background-color: #F3F0F9;
 	margin: 15px auto 22px auto;
 	display: block;
 	cursor: pointer;
@@ -66,7 +64,6 @@ h1{
 #playBoard{
 	width: 650px;
 	height: 550px;
-
 }
 
 #dropzone_container{
@@ -83,6 +80,26 @@ h1{
 	border: 1px solid #000;
 	background-color: #F3F0F9;
 	position: relative;
+}
+
+#d1{
+	background-image: url(../images/plug_d1.png);
+	background-size: cover;
+}
+
+#d2{
+	background-image: url(../images/plug_d2.png);
+	background-size: cover;
+}
+
+#d3{
+	background-image: url(../images/plug_d3.png);
+	background-size: cover;
+}
+
+#d4{
+	background-image: url(../images/plug_d4.png);
+	background-size: cover;
 }
 
 .dropzones img{

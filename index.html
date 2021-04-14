@@ -10,8 +10,9 @@
 	</head>
 	<body>
 		<section id="mainDisplay">
+			<h2 class="hidden">Main Display</h2>
 			<section class="instrument_row">
-				<h1 id="faded">Faded Horizon</h1>
+				<h2 id="faded">Faded Horizon</h2>
 				<img id="r-bass" src="images/radiant_bass.png" alt="instrument" class="instruments" data-sound="0">
 				<img id="r-beat" src="images/radiant_beat.png" alt="instrument" class="instruments" data-sound="1">
 				<img id="r-chords" src="images/radiant_chords.png" alt="instrument" class="instruments" data-sound="2">
@@ -22,16 +23,18 @@
 			<audio data-sound="2" class="loops" src="loops/radiant_chords.wav" loop="loop"></audio>
 			<audio data-sound="3" class="loops" src="loops/radiant_bridge.wav" loop="loop"></audio>
 			<section id="playBoard">
-				<img id="midi_img" src="images/midi.png" alt="instrument">
+				<h2 class="hidden">Playboard</h2>
+				<img id="midi_img" src="images/dropzoneCon.png" alt="instrument">
 				<section id="dropzone_container">
+					<h2 class="hidden">Dropzone</h2>
 					<div class="dropzones" id="d1"></div>
-					<div class="dropzones"></div>
-					<div class="dropzones"></div>
-					<div class="dropzones"></div>
+					<div class="dropzones" id="d2"></div>
+					<div class="dropzones" id="d3"></div>
+					<div class="dropzones" id="d4"></div>
 				</section>
 			</section>
 			<section class="instrument_row">
-				<h1 id="marble">Marble Reels</h1>
+				<h2 id="marble">Marble Reels</h2>
 				<img id="m-drums" src="images/marble_drums.png" alt="instrument" class="instruments" data-sound="4">
 				<img id="m-hats" src="images/marble_hats.png" alt="instrument" class="instruments" data-sound="5">
 				<img id="m-licks" src="images/marble_licks.png" alt="instrument" class="instruments" data-sound="6">
@@ -43,17 +46,18 @@
 			<audio data-sound="7" class="loops" src="loops/sinergy_drums2.wav" loop="loop"></audio>
 			</section>
 		<section id="controls">
+		<h2 class="hidden">Controls</h2>
+		<img id="reset" src="images/rewind.png" alt="control" class="buttons">
 		<img id="play" src="images/play.png" alt="control" class="buttons">
 		<img id="pause" src="images/pause.png" alt="control" class="buttons">
-		<img id="reset" src="images/rewind.png" alt="control" class="buttons">
 		<img id="startOver" src="images/startOver.png" alt="control" class="buttons">
-		<img id="volUp" src="images/volUp.png" alt="control" class="buttons">
 		<img id="volDown" src="images/volDown.png" alt="control" class="buttons">
-		</section>
+		<img id="volUp" src="images/volUp.png" alt="control" class="buttons">
 		</section>
 		<footer id="footer_row">
-			<h1 id="footerHeadline">Twang & Thangs</h1>
+			<h2 id="footerHeadline">Twang & Thangs</h2>
 			<section id="footer_instruments">
+				<h2 class="hidden">Footer Instruments</h2>
 				<img id="t-drums" src="images/twang_drums.png" alt="instrument" class="bot_instruments" data-sound="8">
 				<img id="t-riff" src="images/twang_keys.png" alt="instrument" class="bot_instruments" data-sound="9">
 				<img id="t-keys" src="images/thangs_riff.png" alt="instrument" class="bot_instruments" data-sound="10">
