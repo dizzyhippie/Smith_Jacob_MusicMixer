@@ -9,7 +9,9 @@ const instrumentIcons = document.querySelectorAll(".instruments"),
 	playButton = document.querySelector("#play"),
 	pauseButton = document.querySelector("#pause"),
 	resetButton =document.querySelector("#reset"),
-	startOverButton = document.querySelector("#startOver");
+	startOverButton = document.querySelector("#startOver"),
+	volUp = document.querySelector('#volUp'),
+	volDown = document.querySelector('#volDown');
 
 //Click & Held onto an icon
 function picked(event){
@@ -41,6 +43,7 @@ function playSound(event){
 	console.log("you chose", soundChoice);
 	audio.currentTime = 0;
 	audio.play();
+	audio.volume = 0.5;
 }
 
 //Use when a new track is added, or they hit the restart button
@@ -50,12 +53,6 @@ function restartTrack(event){
 	console.log("restarting track");
 	track.forEach(track => track.currentTime = 0);
 }
-
-// audio.addEventListner("ended", addPending)
-
-// function addpending(track){
-	//
-//}
 
 //Restart Button
 function startOver(event){
@@ -76,12 +73,21 @@ function playTrack(event){
 	let track = document.querySelectorAll('.playing');
 	console.log("resuming track");
 	track.forEach(track => track.play());
-
-
 }
 
-//AUDIO VOLUME THING
-// audio.volume = 0.5;
+// Volume max (could not figure out how to do it in steps 0.50, 0.75, 1.0)
+function volumeUp(event){
+	console.log("Full Volume");
+	let track = document.querySelectorAll('.playing');
+	track.forEach(track => track.volume = 1.0);
+}
+
+// Volume low (could not figure out how to do it in steps 0.75, 0.50, 0.25)
+function volumeDown(event){
+	console.log("Half Volume");
+	let track = document.querySelectorAll('.playing');
+	track.forEach(track => track.volume = 0.25);
+}
 
 //Event Handling at the bottom
 instrumentIcons.forEach(piece => piece.addEventListener("dragstart", picked));
@@ -95,8 +101,8 @@ playButton.addEventListener("click", playTrack);
 pauseButton.addEventListener("click", pauseTrack);
 resetButton.addEventListener("click", restartTrack);
 startOverButton.addEventListener("click", startOver);
+volUp.addEventListener("click", volumeUp);
+volDown.addEventListener("click", volumeDown);
 window.addEventListener("drop", playSound);
 
 })();
-
-

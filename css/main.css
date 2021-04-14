@@ -100,12 +100,11 @@ h1{
 }
 
 #controls{
-	width: 350px;
+	width: 500px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin: 0 auto;
-	margin-top: 15px;
 	margin-bottom: 35px;
 }
 
@@ -121,7 +120,6 @@ h1{
 .bot_instruments{
 	width: 100px;
 	height: 100px;
-	background-color: #0a0a0a;
 	margin: auto;
 	border-radius: 15px;
 }
@@ -136,6 +134,9 @@ h1{
 	justify-content: space-between;
 }
 
+
+/*Meeting ID: 963 2882 9123
+Passcode: KWhm5b*/
 
 
 
