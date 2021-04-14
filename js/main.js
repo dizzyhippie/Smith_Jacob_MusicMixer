@@ -12,7 +12,7 @@ const instrumentIcons = document.querySelectorAll(".instruments"),
 	startOverButton = document.querySelector("#startOver");
 
 //Click & Held onto an icon
-function picked(){
+function picked(event){
 	console.log('You have chosen an Instrument');
 	event.dataTransfer.setData("savedID", this.id);
 	event.dataTransfer.setData("soundChoice", this.dataset.sound);
@@ -44,26 +44,40 @@ function playSound(event){
 }
 
 //Use when a new track is added, or they hit the restart button
-//This only seems to work for the first item in Faded Horizon?
 function restartTrack(event){
 	event.preventDefault();
-	//The track needs to restart all audio playing, but when I change the below to querySelectorAll it doesn't work for any of them.
-	let track = document.querySelector('audio');
+	let track = document.querySelectorAll('.playing');
 	console.log("restarting track");
-	track.currentTime = 0;
+	track.forEach(track => track.currentTime = 0);
 }
 
+// audio.addEventListner("ended", addPending)
+
+// function addpending(track){
+	//
+//}
+
+//Restart Button
 function startOver(event){
 	window.location.reload();
 }
 
-//Also only seems to work for the first item in Faded Horizon, similiar documentQuerySelector issue
-//All of these control functions (play pause rewind) only seem to work with the first item.
+//Pause Button
 function pauseTrack(event){
 	event.preventDefault();
-	let song = document.querySelector('.playing')
+	let songs = document.querySelectorAll('.playing');
 	console.log("pausing track");
-	song.pause();
+	songs.forEach(song => song.pause());
+}
+
+//Play Button
+function playTrack(event){
+	event.preventDefault();
+	let track = document.querySelectorAll('.playing');
+	console.log("resuming track");
+	track.forEach(track => track.play());
+
+
 }
 
 //AUDIO VOLUME THING
@@ -77,6 +91,7 @@ playBoard.forEach(zone => {
 	zone.addEventListener("drop", chosen);
 	zone.addEventListener("drop", restartTrack);	
 });
+playButton.addEventListener("click", playTrack);
 pauseButton.addEventListener("click", pauseTrack);
 resetButton.addEventListener("click", restartTrack);
 startOverButton.addEventListener("click", startOver);
