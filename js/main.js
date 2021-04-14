@@ -9,8 +9,7 @@ const instrumentIcons = document.querySelectorAll(".instruments"),
 	playButton = document.querySelector("#play"),
 	pauseButton = document.querySelector("#pause"),
 	resetButton =document.querySelector("#reset"),
-	startOverButton = document.querySelector("#startOver"),
-	track = document.querySelector('audio');
+	startOverButton = document.querySelector("#startOver");
 
 //Click & Held onto an icon
 function picked(){
@@ -45,8 +44,10 @@ function playSound(event){
 }
 
 //Use when a new track is added, or they hit the restart button
+//This only seems to work for the first item in Faded Horizon?
 function restartTrack(event){
 	event.preventDefault();
+	//The track needs to restart all audio playing, but when I change the below to querySelectorAll it doesn't work for any of them.
 	let track = document.querySelector('audio');
 	console.log("restarting track");
 	track.currentTime = 0;
@@ -56,7 +57,10 @@ function startOver(event){
 	window.location.reload();
 }
 
+//Also only seems to work for the first item in Faded Horizon, similiar documentQuerySelector issue
+//All of these control functions (play pause rewind) only seem to work with the first item.
 function pauseTrack(event){
+	event.preventDefault();
 	let song = document.querySelector('.playing')
 	console.log("pausing track");
 	song.pause();
