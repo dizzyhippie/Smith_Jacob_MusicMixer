@@ -15,13 +15,27 @@ h1{
 	font-weight: bold;
 }
 
+#faded{
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+
+#marble{
+	font-family: 'Satisfy', cursive;
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+
 #footerHeadline{
 	padding-top: 15px;
 	display: block;
 	margin: 0 auto;
-	background-color: #5f6164;
+	background-color: #0a0a0a;
 	color: #fff;
-	font-family: arial, 'sans-serif';
+	font-family: 'Bangers', cursive;
+	letter-spacing: 3px;
+	font-size: 24px;
 	width: 575px;
 }
 
@@ -36,7 +50,7 @@ h1{
 	padding-bottom: 15px;
 	width: 320px;
 	height: 500px;
-	background-color: #5f6164;
+	background-color: #0a0a0a;
 }
 
 .instruments{
@@ -107,7 +121,7 @@ h1{
 .bot_instruments{
 	width: 100px;
 	height: 100px;
-	background-color: #F3F0F9;
+	background-color: #0a0a0a;
 	margin: auto;
 	border-radius: 15px;
 }
@@ -115,7 +129,7 @@ h1{
 #footer_instruments{
 	width: 575px;
 	height: 150px;
-	background-color: #5f6164;
+	background-color: #0a0a0a;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
